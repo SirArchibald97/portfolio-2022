@@ -5,6 +5,7 @@ import Footer from "../components/footer";
 import Biscuits from "../components/biscuits";
 
 import Head from 'next/head';
+import Skills from "../components/skills";
 
 export default function Home() {
     const pageTitle = "SirArchibald.dev";
@@ -21,6 +22,7 @@ export default function Home() {
             <Header />
             <About />
             <Projects />
+            <Skills />
             <Footer />
             <Biscuits />
         </>

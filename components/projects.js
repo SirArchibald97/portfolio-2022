@@ -4,20 +4,20 @@ const projects = [
     {
         name: 'Blairs Brainiacs',
         desc: 'Custom tailored moderation and economy systems for the largest UK based education Discord community.',
-        imageUrl: 'BB.png',
+        imageUrl: 'blairsbrainiacs_logo.png',
         link: "https://discord.gg/blairsbrainiacs"
-    },
-    {
-        name: 'Legion of Super Evil',
-        desc: 'Front and backend systems for a website and data management solution.',
-        imageUrl: 'Hypixel.png',
-        link: "https://loseguild.com"
     },
     {
         name: 'Cent\'s Lounge',
         desc: 'Discord based economy and moderation systems build to client specifications.',
-        imageUrl: 'centranos.jpg',
+        imageUrl: 'centslounge_logo.jpg',
         link: "https://discord.gg/centranos"
+    },
+    {
+        name: '???',
+        desc: 'Coming Soon™',
+        imageUrl: 'unnamed.jpg',
+        link: "/"
     },
     {
         name: '???',
@@ -44,7 +44,7 @@ export default function Projects() {
         <div id="projects">
             <div className="text-center font-mono pt-16">
                 <p className="mt-8 text-2xl font-extrabold text-gray-900 sm:text-4xl sm:tracking-tight lg:text-4xl">
-                    Here are some of my projects...
+                    Projects I've worked on
                 </p>
             </div>
             <ul role="list" className="grid grid-cols-1 gap-6 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-3 mx-16 sm:mx-20 md:mx-52 my-14 font-mono">
