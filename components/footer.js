@@ -9,7 +9,7 @@ export default function Footer() {
     const [emoji, setEmoji] = useState(null);
     useEffect(() => {
        setEmoji(randomEmoji.random({ count: 1})[0].character);
-    });
+    }, []);
 
     return (
         <footer className="bg-white font-mono">

@@ -1,4 +1,5 @@
 import { LinkIcon } from '@heroicons/react/24/solid';
+import Image from "next/image";
 
 const projects = [
     {
@@ -44,7 +45,7 @@ export default function Projects() {
         <div id="projects">
             <div className="text-center font-mono pt-16">
                 <p className="mt-8 text-2xl font-extrabold text-gray-900 sm:text-4xl sm:tracking-tight lg:text-4xl">
-                    Projects I've worked on
+                    Projects I&apos;ve worked on
                 </p>
             </div>
             <ul role="list" className="grid grid-cols-1 gap-6 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-3 mx-16 sm:mx-20 md:mx-52 my-14 font-mono">
@@ -54,7 +55,7 @@ export default function Projects() {
                         className="col-span-1 flex flex-col text-center bg-gray-100 divide-y divide-gray-200 sm:transform hover:translate-x-2 hover:translate-y-2 ease-in-out duration-75"
                     >
                         <div className="flex-1 flex flex-col p-8">
-                            <img className="w-32 h-32 flex-shrink-0 mx-auto" src={project.imageUrl} alt="" />
+                            <Image className="w-32 h-32 flex-shrink-0 mx-auto" src={project.imageUrl} alt="" />
                             <h3 className="mt-6 text-gray-900 text-md font-bold">{project.name}</h3>
                             <dl className="mt-1 flex-grow flex flex-col justify-between">
                                 <dt className="sr-only">Description</dt>

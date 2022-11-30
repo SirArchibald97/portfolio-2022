@@ -13,7 +13,7 @@ export default function About() {
             age--;
         }
         setAge(age);
-    });
+    }, []);
 
     return (
         <div id="about">

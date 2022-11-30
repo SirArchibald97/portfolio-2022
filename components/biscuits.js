@@ -18,7 +18,7 @@ export default function Biscuits() {
                                         <span className="md:hidden">We announced a new product!</span>
                                         <div className="flex flex-col shrink">
                                             <span className="text-2xl font-bold border-white py-2">This site uses biscuits!</span>
-                                            <span className="hidden md:inline">It doesn't actually, I just wanted an excuse to make that joke.</span>
+                                            <span className="hidden md:inline">It doesn&apos;t actually, I just wanted an excuse to make that joke.</span>
                                         </div>
                                     </div>
                                 </div>
