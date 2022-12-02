@@ -52,10 +52,10 @@ export default function Projects() {
                 {projects.map((project) => (
                     <li
                         key={project.name}
-                        className="col-span-1 flex flex-col text-center bg-gray-100 divide-y divide-gray-200 sm:transform hover:translate-x-2 hover:translate-y-2 ease-in-out duration-75"
+                        className="col-span-1 flex flex-col text-center bg-gray-100 divide-y divide-gray-200 sm:transform hover:translate-x-2 hover:translate-y-2 ease-in-out duration-75 rounded-xl"
                     >
                         <div className="flex-1 flex flex-col p-8">
-                            <Image className="w-32 h-32 flex-shrink-0 mx-auto" width="512" height="512" src={project.imageUrl} alt="" />
+                            <Image className="w-32 h-32 flex-shrink-0 mx-auto rounded-lg" width="512" height="512" src={project.imageUrl} alt="" />
                             <h3 className="mt-6 text-gray-900 text-md font-bold">{project.name}</h3>
                             <dl className="mt-1 flex-grow flex flex-col justify-between">
                                 <dt className="sr-only">Description</dt>
@@ -63,7 +63,7 @@ export default function Projects() {
                             </dl>
                         </div>
                         <div>
-                            <div className="-mt-px flex divide-x divide-gray-200 bg-slate-300 hover:bg-slate-400">
+                            <div className="-mt-px flex divide-x divide-gray-200 bg-slate-300 hover:bg-slate-400 hover:underline rounded-b-xl duration-75">
                                 <div className="w-0 flex-1 flex">
                                     <a
                                     href={project.link}

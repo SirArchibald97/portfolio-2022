@@ -4,7 +4,10 @@ import { useState } from 'react';
 
 export default function Biscuits() {
     const [showBiscuits, setShowBiscuits] = useState(true);
-    const onClick = () => setShowBiscuits(false);
+    const onClickDismiss = () => setShowBiscuits(false);
+
+    const [buttonName, setButtonName] = useState('Learn more');
+    const onClickButton = () => setButtonName('This does nothing!');
 
     return (
         showBiscuits ? (
@@ -17,17 +20,18 @@ export default function Biscuits() {
                                     <div className="ml-3 truncate font-medium text-white">
                                         <span className="md:hidden">We announced a new product!</span>
                                         <div className="flex flex-col shrink">
-                                            <span className="text-2xl font-bold border-white py-2">This site uses biscuits!</span>
-                                            <span className="hidden md:inline">It doesn&apos;t actually, I just wanted an excuse to make that joke.</span>
+                                            <span className="text-2xl font-bold border-white mt-2">This site uses biscuits!</span>
+                                            <span className="hidden md:inline mb-2">It doesn&apos;t actually, I just wanted an excuse to make that joke and add a cool cookies banner.</span>
                                         </div>
                                     </div>
                                 </div>
-                                <div className="order-3 mt-2 w-full flex-shrink-0 sm:order-2 sm:mt-0 sm:w-auto">
+                                <div className="order-3 w-full flex-shrink-0 sm:order-2 sm:mt-0 sm:w-auto">
                                     <Link
-                                        href="/"
+                                        href=""
                                         className="flex items-center justify-center rounded-md border border-transparent bg-white px-4 py-2 text-sm font-medium text-indigo-600 shadow-sm hover:bg-indigo-50"
+                                        onClick={onClickButton}
                                     >
-                                        Learn more
+                                        {buttonName}
                                     </Link>
                                 </div>
                                 <div className="order-2 flex-shrink-0 sm:order-3 sm:ml-3">
@@ -36,7 +40,7 @@ export default function Biscuits() {
                                         className="-mr-1 flex rounded-md p-2 hover:bg-indigo-500 focus:outline-none focus:ring-2 focus:ring-white sm:-mr-2"
                                     >
                                         <span className="sr-only">Dismiss</span>
-                                        <XMarkIcon className="h-6 w-6 text-white" aria-hidden="true" onClick={onClick} />
+                                        <XMarkIcon className="h-6 w-6 text-white" aria-hidden="true" onClick={onClickDismiss} />
                                     </button>
                                 </div>
                             </div>
