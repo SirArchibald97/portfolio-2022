@@ -28,3 +28,7 @@ a {
     background: black;
   }
 }
+
+svg:hover {
+    fill: "#64748B";
+}

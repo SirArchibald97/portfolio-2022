@@ -22,7 +22,6 @@ export default function Home() {
             <Header />
             <About />
             <Projects />
-            <Skills />
             <Footer />
             <Biscuits />
         </>

@@ -5,37 +5,37 @@ const projects = [
     {
         name: 'Blairs Brainiacs',
         desc: 'Custom tailored moderation and economy systems for the largest UK based education Discord community.',
-        imageUrl: 'blairsbrainiacs_logo.png',
+        imageUrl: '/blairsbrainiacs_logo.png',
         link: "https://discord.gg/blairsbrainiacs"
     },
     {
         name: 'Cent\'s Lounge',
         desc: 'Discord based economy and moderation systems build to client specifications.',
-        imageUrl: 'centslounge_logo.jpg',
+        imageUrl: '/centslounge_logo.jpg',
         link: "https://discord.gg/centranos"
     },
     {
         name: '???',
         desc: 'Coming Soon™',
-        imageUrl: 'unnamed.jpg',
+        imageUrl: '/unnamed.jpg',
         link: "/"
     },
     {
         name: '???',
         desc: 'Coming Soon™',
-        imageUrl: 'unnamed.jpg',
+        imageUrl: '/unnamed.jpg',
         link: "/"
     },
     {
         name: '???',
         desc: 'Coming Soon™',
-        imageUrl: 'unnamed.jpg',
+        imageUrl: '/unnamed.jpg',
         link: "/"
     },
     {
         name: '???',
         desc: 'Coming Soon™',
-        imageUrl: 'unnamed.jpg',
+        imageUrl: '/unnamed.jpg',
         link: "/"
     },
 ]
@@ -55,7 +55,7 @@ export default function Projects() {
                         className="col-span-1 flex flex-col text-center bg-gray-100 divide-y divide-gray-200 sm:transform hover:translate-x-2 hover:translate-y-2 ease-in-out duration-75"
                     >
                         <div className="flex-1 flex flex-col p-8">
-                            <Image className="w-32 h-32 flex-shrink-0 mx-auto" src={project.imageUrl} alt="" />
+                            <Image className="w-32 h-32 flex-shrink-0 mx-auto" width="512" height="512" src={project.imageUrl} alt="" />
                             <h3 className="mt-6 text-gray-900 text-md font-bold">{project.name}</h3>
                             <dl className="mt-1 flex-grow flex flex-col justify-between">
                                 <dt className="sr-only">Description</dt>
