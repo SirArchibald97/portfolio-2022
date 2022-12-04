@@ -17,9 +17,11 @@ export default function About() {
 
     return (
         <div id="about">
-            <div className="max-w-xs sm:max-w-md md:max-w-lg lg:max-w-5xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8 border-b-2">
-                <div className="text-center font-mono">
-                    <p className="text-3xl sm:text-4xl font-extrabold text-gray-900 sm:tracking-tight">
+            <div
+                className="mx-16 sm:mx-20 md:mx-52 font-mono text-center bg-gray-100 divide-y divide-gray-200 rounded-xl shadow-lg"
+            >
+                <div className="flex-1 flex flex-col p-8">
+                    <p className="text-3xl sm:text-4xl font-extrabold text-gray-900 sm:tracking-tight underline decoration-4">
                         Hey, I&apos;m Archie!
                     </p>
                     <p className="text-xl font-normal text-gray-500 sm:text-xl sm:tracking-tight lg:text-xl pt-12">

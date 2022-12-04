@@ -10,15 +10,15 @@ const projects = [
     },
     {
         name: 'Cent\'s Lounge',
-        desc: 'Discord based economy and moderation systems build to client specifications.',
+        desc: 'Custom tailored moderation and economy systems for an infuencer\'s Discord community.',
         imageUrl: '/centslounge_logo.jpg',
         link: "https://discord.gg/centranos"
     },
     {
-        name: '???',
-        desc: 'Coming Soon™',
-        imageUrl: '/unnamed.jpg',
-        link: "/"
+        name: 'Discord Bot Template',
+        desc: 'A template for creating Discord bots with Node.js and Discord.js v13.',
+        imageUrl: '/discord_logo.webp',
+        link: "https://github.com/SirArchibald97/discord-bot-template"
     },
     {
         name: '???',
@@ -52,7 +52,7 @@ export default function Projects() {
                 {projects.map((project) => (
                     <li
                         key={project.name}
-                        className="col-span-1 flex flex-col text-center bg-gray-100 divide-y divide-gray-200 sm:transform hover:translate-x-2 hover:translate-y-2 ease-in-out duration-75 rounded-xl"
+                        className="col-span-1 flex flex-col text-center bg-gray-100 divide-y divide-gray-200 sm:transform hover:translate-x-2 hover:translate-y-2 ease-in-out duration-75 rounded-xl shadow-lg"
                     >
                         <div className="flex-1 flex flex-col p-8">
                             <Image className="w-32 h-32 flex-shrink-0 mx-auto rounded-lg" width="512" height="512" src={project.imageUrl} alt="" />
