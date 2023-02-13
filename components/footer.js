@@ -1,5 +1,3 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faTwitch, faTwitter, faYoutube } from "@fortawesome/free-brands-svg-icons";
 import { useEffect, useState } from "react";
 import Link from "next/link";
 
@@ -15,14 +13,6 @@ export default function Footer() {
         <footer className="bg-white font-mono">
             <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:flex lg:items-center lg:justify-between lg:px-8">
                 <div className="flex justify-center space-x-6 lg:order-2 text-xl">
-                    <a href="https://twitch.tv/sirarchibald97">
-                        <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-brand-twitch stroke-gray-300 hover:stroke-gray-500" width="42" height="42" viewBox="0 0 24 24" strokeWidth="1.5" fill="none" strokeLinecap="round" strokeLinejoin="round">
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                            <path d="M4 5v11a1 1 0 0 0 1 1h2v4l4 -4h5.584c.266 0 .52 -.105 .707 -.293l2.415 -2.414c.187 -.188 .293 -.442 .293 -.708v-8.585a1 1 0 0 0 -1 -1h-14a1 1 0 0 0 -1 1z" />
-                            <line x1="16" y1="8" x2="16" y2="12" />
-                            <line x1="12" y1="8" x2="12" y2="12" />
-                        </svg>
-                    </a>
                     <a href="https://www.youtube.com/channel/@sirarchibald">
                         <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-brand-youtube stroke-gray-300 hover:stroke-gray-500" width="42" height="42" viewBox="0 0 24 24" strokeWidth="1.5" fill="none" strokeLinecap="round" strokeLinejoin="round">
                             <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
@@ -44,8 +34,8 @@ export default function Footer() {
                     </a>
                 </div>
                 <div className="mt-8 lg:mt-0 lg:order-1 flex flex-col">
-                    <Link href="https://www.npmjs.com/package/random-emoji"><p className="text-center text-base text-gray-400 hover:text-gray-500 hover:underline pr-2">Crafted with {emoji}</p></Link>
-                    <Link href="https://github.com/SirArchibald97/portfolio"><p className="text-gray-400 hover:text-gray-500 hover:underline">[GitHub]</p></Link>
+                    <p className="text-center text-base text-gray-400 hover:text-gray-500 hover:underline pr-2">Crafted with <Link href="https://www.npmjs.com/package/random-emoji">{emoji}</Link></p>
+                    <Link href="https://github.com/SirArchibald97/portfolio"><p className="text-gray-400 hover:text-gray-500 hover:underline text-center lg:text-left">[GitHub]</p></Link>
                 </div>
             </div>
         </footer>

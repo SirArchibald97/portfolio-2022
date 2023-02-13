@@ -18,9 +18,8 @@ export default function Biscuits() {
                             <div className="flex flex-wrap items-center justify-between">
                                 <div className="flex w-0 flex-1 items-center">
                                     <div className="ml-3 truncate font-medium text-white">
-                                        <span className="md:hidden">We announced a new product!</span>
-                                        <div className="flex flex-col shrink">
-                                            <span className="text-2xl font-bold border-white mt-2">This site uses biscuits!</span>
+                                        <div className="flex flex-col shrink flex-wrap">
+                                            <span className="text-2xl font-bold border-white pb-2 md:pb-0 sm:mt-2">This site uses biscuits!</span>
                                             <span className="hidden md:inline mb-2">It doesn&apos;t actually, I just wanted an excuse to make that joke and add a cool cookies banner.</span>
                                         </div>
                                     </div>

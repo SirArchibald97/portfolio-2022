@@ -3,6 +3,12 @@ import Image from "next/image";
 
 const projects = [
     {
+        name: 'Alex',
+        desc: 'A Discord bot to view information about the MCC event and its players, results from past events, and stats from the Hall of Fame!',
+        imageUrl: '/alex.jpg',
+        link: "https://alex.sirarchibald.dev"
+    },
+    {
         name: 'Blairs Brainiacs',
         desc: 'Custom tailored moderation and economy systems for the largest UK based education Discord community.',
         imageUrl: '/blairsbrainiacs_logo.png',
@@ -16,15 +22,9 @@ const projects = [
     },
     {
         name: 'Discord Bot Template',
-        desc: 'A template for creating Discord bots with Node.js and Discord.js v13.',
+        desc: 'A template for creating Discord bots with Node.js and Discord.js v14.',
         imageUrl: '/discord_logo.webp',
-        link: "https://github.com/SirArchibald97/discord-bot-template"
-    },
-    {
-        name: '???',
-        desc: 'Coming Soon™',
-        imageUrl: '/unnamed.jpg',
-        link: "/"
+        link: "https://github.com/SirArchibald97/discord-bot-template-v14"
     },
     {
         name: '???',
